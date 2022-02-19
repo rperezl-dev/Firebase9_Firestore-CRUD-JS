@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Alexander P.">
+    <meta name="descripcion" content="CRUD-Firestore">
+    <!-- keywords -->
+    <meta name="keywords" content="CRUDS, Firebase Firestore Version 9, CRUD con JavaScript"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase9 CRUD-Firestore</title>
+
+    <!-- BOOTSWATCH -->
+    <link rel="stylesheet" href="./bootstrap.min.css"/>
+  </head>
+
+  <body class="bg-dark">
+    <!-- ADD TASK -->
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-md-15">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="h4">Agregar tarea</h1>
+
+              <form id="task-form">
+                <label for="title">Título:</label>
+                <input
+                  type="text"
+                  id="task-title"
+                  class="form-control mb-3"
+                  class="My First Title"
+                  placeholder="Título de la tarea.."
+                  autofocus
+                />
+
+                <label for="description">Descripción / Comentario:</label>
+                <textarea
+                  id="task-description"
+                  rows="3"
+                  class="form-control mb-3"
+                  placeholder="Descripción y/o comentario de la tarea.."
+                ></textarea>
+
+                <button class="btn btn-primary" id="btn-task-form">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Tasks List -->
+        <div class="col-md-15" id="tasks-container"></div>
+      </div>
+    </div>
+
+    <!-- CUSTOM CODE -->
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
